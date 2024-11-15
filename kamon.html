@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>
+			kamon
+		</title>
+		<script>
+		<!--
+			function drawkamon(){
+				const canvas = document.getElementById("kamonCanvas");
+				const ctx = canvas.getContext("2d");
+
+				var x = 150;
+				var y = 70;
+				var size = 50;
+
+				drawTriangle(ctx, x, y, size);
+				drawTriangle(ctx, x+size, y+size, size);
+				drawTriangle(ctx, x-size, y+size, size);
+			}
+			function drawTriangle(ctx, x, y, size){
+				ctx.beginPath();
+				ctx.moveTo(x, y);
+				ctx.lineTo(x + size, y + size);
+				ctx.lineTo(x - size, y + size);
+				ctx.closePath();
+				ctx.fill();
+			}
+		-->
+		</script>
+	</head>
+	<body onload="drawkamon()">
+		<canvas id="kamonCanvas"
+			width="300px" height="300px"
+			style="border:1px solid #000;"></canvas>
+	</body>
+</html>
+

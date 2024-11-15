@@ -1,0 +1,114 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			太陰太極図
+		</title>
+		<script>
+		<!--
+			function drawTaiinTaikyokuZu(){
+				const canvas = document.getElementById("mainCanvas");
+				const ctx = canvas.getContext("2d");
+				
+				let centerx = 150;
+				let centery = 150;
+				let r = 100;
+				
+				//線の色を指定
+				ctx.strokeStyle = "#000000";
+				
+				//①白い半円を描く
+				ctx.fillStyle = "#FFFFFF";
+				ctx.beginPath();
+				ctx.arc(
+					  centerx		// 中心x座標
+					, centery		// 中心y座標
+					, r				// 半径
+					, Math.PI *  90/180		// 円弧の開始角
+					, Math.PI * 270/180		// 円弧の終了角
+					, false		// 描画の方向
+				);
+				ctx.closePath();
+				ctx.stroke();
+				ctx.fill();
+				
+				//②黒い半円を描く
+				ctx.fillStyle = "#000000";
+				ctx.beginPath();
+				ctx.arc(
+					  centerx		// 中心x座標
+					, centery		// 中心y座標
+					, r				// 半径
+					, Math.PI *  270/180		// 円弧の開始角
+					, Math.PI *   90/180		// 円弧の終了角
+					, false		// 描画の方向
+				);
+				ctx.closePath();
+				ctx.stroke();
+				ctx.fill();
+				
+				//③上半分の白い円を描く
+				ctx.fillStyle = "#FFFFFF";
+				ctx.beginPath();
+				ctx.arc(
+					  centerx			// 中心x座標
+					, centerx - r/2		// 中心y座標
+					, r/2			// 半径
+					, Math.PI *   0/180		// 円弧の開始角
+					, Math.PI * 360/180		// 円弧の終了角
+					, false		// 描画の方向
+				);
+				ctx.closePath();
+				ctx.fill();
+				
+				//④下半分の黒い円を描く
+				ctx.fillStyle = "#000000";
+				ctx.beginPath();
+				ctx.arc(
+					  centerx			// 中心x座標
+					, centerx + r/2		// 中心y座標
+					, r/2			// 半径
+					, Math.PI *   0/180		// 円弧の開始角
+					, Math.PI * 360/180		// 円弧の終了角
+					, false		// 描画の方向
+				);
+				ctx.closePath();
+				ctx.fill();
+				
+				//⑤上の小さい黒い円を描く
+				ctx.fillStyle = "#000000";
+				ctx.beginPath();
+				ctx.arc(
+					  centerx			// 中心x座標
+					, centerx - r/2		// 中心y座標
+					, r/8			// 半径
+					, Math.PI *   0/180		// 円弧の開始角
+					, Math.PI * 360/180		// 円弧の終了角
+					, false		// 描画の方向
+				);
+				ctx.closePath();
+				ctx.fill();
+				
+				//⑤下の小さい白い円を描く
+				ctx.fillStyle = "#FFFFFF";
+				ctx.beginPath();
+				ctx.arc(
+					  centerx			// 中心x座標
+					, centerx + r/2		// 中心y座標
+					, r/8			// 半径
+					, Math.PI *   0/180		// 円弧の開始角
+					, Math.PI * 360/180		// 円弧の終了角
+					, false		// 描画の方向
+				);
+				ctx.closePath();
+				ctx.fill();
+			}
+		-->
+		</script>
+	</head>
+	<body onload="drawTaiinTaikyokuZu()">
+		<canvas id="mainCanvas"
+			width="300px" height="300px"
+			style="border:1px solid #000"></canvas>
+	</body>
+</html>
