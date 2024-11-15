@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<title>
+			Jump Ball
+		</title>
+		<style>
+		<!--
+			#ball{
+				color:red;
+				font-size:20px;
+				position:absolute;
+				top:200px;
+				left:100px;
+			}
+			#ground {
+				position:absolute;
+				left:50px;
+				top:320px;
+				width:500px;
+				height:2px;
+				background-color:brown;
+			}
+		-->
+		</style>
+		<script>
+		<!--
+			var x = 50;
+			var y = 50;
+			var addx = 3;
+			var addy = 0;
+			function move() {
+				var elm = document.getElementById("ball");
+				x += addx;
+				y += addy;
+				if (x >= 500){
+					x = 500;
+						addx = -addx;
+				}
+				if (x <= 50) {
+					x =50;
+					addx = -addx;
+				}
+				if (y >= 300){
+					y = 300;
+					addy = -addy;
+				}
+				else {
+					addy += 1;
+				}
+				elm.style.left = x;
+				elm.style.top = y;
+				setTimeout(move, 100);
+			}
+		-->
+		</script>
+	</head>
+	<body>
+		<button onclick="move();">start</button>
+		<div id="ball">●</div>
+		<div id="ground"></div>
+	</body>
+</html>
